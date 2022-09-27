@@ -10,12 +10,9 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-<<<<<<< HEAD
-      body: Text('Hello ITS FINALLY WORKING'),
-=======
-      body: Text('Roomate Pairing'),
->>>>>>> origin/main
+    return const Scaffold(
+      body: Text('Hello ITS xyz'),
+
     );
   }
 }

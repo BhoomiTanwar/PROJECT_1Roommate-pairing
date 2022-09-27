@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'Pages/home.dart';
+import 'Pages/profile.dart';
+import 'Pages/slider.dart';
 
-void main()=> runApp(const MaterialApp(
-    home: Home(),
-)); //MaterialApp
+
+void main()=> runApp(const profilepage()); //MaterialApp
 
 
