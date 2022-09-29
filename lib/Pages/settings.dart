@@ -86,6 +86,7 @@ class _SettingsPageState extends State<SettingsPage> {
                               const Icon(
                                 Icons.person,
                                 color: Color(0xff494C4E),
+                                size: 40,
                               ),
                               ElevatedButton(
                                 onPressed: () {},
@@ -120,7 +121,7 @@ class _SettingsPageState extends State<SettingsPage> {
               children: <Widget>[
                 Container(
                   width: 400,
-                  height: 400,
+                  height: 375,
                   margin: const EdgeInsets.all(20),
                   padding: const EdgeInsets.all(40),
                   decoration: const BoxDecoration(
