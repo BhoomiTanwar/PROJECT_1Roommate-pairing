@@ -1,3 +1,5 @@
+import 'package:cbigdtuw04/Pages/edit_profile.dart';
+import 'package:cbigdtuw04/Pages/game.dart';
 import 'package:flutter/material.dart';
 import 'Pages/settings.dart';
 import 'Pages/slider.dart';
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xff24293E),
       ),
       title: 'User Profile',
-      home: SettingsPage(),
+      home: Game(),
     );
   }
 }
