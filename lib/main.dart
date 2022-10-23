@@ -1,9 +1,6 @@
 import 'package:cbigdtuw04/Pages/edit_profile.dart';
 import 'package:cbigdtuw04/Pages/game.dart';
 import 'package:flutter/material.dart';
-import 'Pages/settings.dart';
-import 'Pages/slider.dart';
-
 void main() => runApp(const MaterialApp(
   home: MyApp(),
 ));
