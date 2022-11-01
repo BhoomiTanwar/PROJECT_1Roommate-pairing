@@ -2,7 +2,9 @@ import 'package:cbigdtuw04/Pages/MyPhone.dart';
 import 'package:cbigdtuw04/Pages/OTP_Verification.dart';
 import 'package:flutter/material.dart';
 import 'package:cbigdtuw04/Pages/SignUpScreen.dart';
-import 'package:flutter_signin_button/flutter_signin_button.dart';
+import 'package:cbigdtuw04/Pages/LoggIn.dart';
+import 'package:flutter_signin_button/button_list.dart';
+import 'package:flutter_signin_button/button_view.dart';
 
 class LogInScreen extends StatefulWidget {
   const LogInScreen({Key? key}) : super(key: key);
@@ -15,7 +17,7 @@ class _LogInScreenState extends State<LogInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.indigo[900],
+        backgroundColor: Colors.blueGrey[900],
         body: SafeArea(
             child: SingleChildScrollView(
                 child: Column(children: [
@@ -70,7 +72,7 @@ class _LogInScreenState extends State<LogInScreen> {
               child: Container(
                 height: 300,
                 width: double.infinity,
-                color: Colors.indigo[300],
+                color: Colors.blue[400],
                 child: Padding(
                     padding: EdgeInsets.all(15),
                     child: Column(
@@ -111,7 +113,7 @@ class _LogInScreenState extends State<LogInScreen> {
                               child: Container(
                                 height: 38,
                                 width: 100,
-                                color: Colors.indigo[600],
+                                color: Colors.blue[200],
                                 child: const Center(
                                   child: Text(
                                     "Log In",

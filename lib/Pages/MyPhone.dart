@@ -23,11 +23,11 @@ class _MyPhoneScreenState extends State<MyPhoneScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.indigo[900],
+        backgroundColor: Colors.blueGrey[900],
         body: Column(
           children: [
             Padding(
-                padding: EdgeInsets.only(left: 20),
+                padding: EdgeInsets.only(left: 10),
                 child: InkWell(
                   onTap: () {
                     Navigator.of(context).pop();
@@ -35,11 +35,11 @@ class _MyPhoneScreenState extends State<MyPhoneScreen> {
                   child: const Icon(
                     Icons.arrow_back,
                     color: Colors.white,
-                    size: 30,
+                    size: 50,
                   ),
                 )),
             SizedBox(
-              height: 50,
+              height: 110,
             ),
             Container(
               margin: EdgeInsets.only(left: 25, right: 25),
@@ -49,9 +49,9 @@ class _MyPhoneScreenState extends State<MyPhoneScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/hero-image.png',
-                    width: 150,
-                    height: 150,
+                    'assets/face-recognition.png',
+                    width: 300,
+                    height: 250,
                   ),
                   SizedBox(
                     height: 25,
@@ -126,7 +126,7 @@ class _MyPhoneScreenState extends State<MyPhoneScreen> {
                           },
                           child: Text("Send the OTP"),
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.indigo[300],
+                            primary: Colors.blue[300],
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10)),
                           ))),
