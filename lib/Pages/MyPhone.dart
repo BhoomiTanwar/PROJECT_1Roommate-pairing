@@ -122,7 +122,7 @@ class _MyPhoneScreenState extends State<MyPhoneScreen> {
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) =>
-                                        const OTPVerificationScreen()));
+                                        const OTPverificationScreen()));
                           },
                           child: Text("Send the OTP"),
                           style: ElevatedButton.styleFrom(

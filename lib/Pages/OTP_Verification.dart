@@ -1,12 +1,13 @@
+import 'package:cbigdtuw04/Pages/SignUpScreen.dart';
+
 import 'package:flutter/material.dart';
-import 'package:cbigdtuw04/Pages/MyPhone.dart';
 
 void main() {
-  runApp(const OTPVerificationScreen());
+  runApp(const OTPverificationScreen());
 }
 
-class OTPVerificationScreen extends StatelessWidget {
-  const OTPVerificationScreen({Key? key}) : super(key: key);
+class OTPverificationScreen extends StatelessWidget {
+  const OTPverificationScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -45,46 +46,48 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Verification Code'),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Text('Phone Number Verification'),
-          const SizedBox(
-            height: 30,
-          ),
-          // Implement 4 input fields
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              OtpInput(_fieldOne, true),
-              OtpInput(_fieldTwo, false),
-              OtpInput(_fieldThree, false),
-              OtpInput(_fieldFour, false)
-            ],
-          ),
-          const SizedBox(
-            height: 30,
-          ),
-          ElevatedButton(
+      body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        const Text('Phone Number Verification'),
+        const SizedBox(
+          height: 30,
+        ),
+        // Implement 4 input fields
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            OtpInput(_fieldOne, true),
+            OtpInput(_fieldTwo, false),
+            OtpInput(_fieldThree, false),
+            OtpInput(_fieldFour, false)
+          ],
+        ),
+        const SizedBox(
+          height: 30,
+        ),
+        ElevatedButton(
+          onPressed: () {
+            setState(() {
+              _otp = _fieldOne.text +
+                  _fieldTwo.text +
+                  _fieldThree.text +
+                  _fieldFour.text;
+            });
+          },
+          child: ElevatedButton(
               onPressed: () {
-                setState(() {
-                  _otp = _fieldOne.text +
-                      _fieldTwo.text +
-                      _fieldThree.text +
-                      _fieldFour.text;
-                });
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SignUpScreen()));
               },
-              child: const Text('Submit')),
-          const SizedBox(
-            height: 30,
-          ),
-          // Display the entered OTP code
-          Text(
-            _otp ?? 'Please enter OTP',
-            style: const TextStyle(fontSize: 30),
-          )
-        ],
-      ),
+              child: Text("Submit"),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.blue[300],
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)),
+              )),
+        ),
+      ]),
     );
   }
 }
