@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:cbigdtuw04/Pages/SignUpScreen.dart';
 import 'package:flutter_signin_button/button_list.dart';
 import 'package:flutter_signin_button/button_view.dart';
+import 'package:cbigdtuw04/Pages/home_screen.dart';
 
 void main() {
   runApp(const SignUpScreen());
@@ -20,7 +21,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[900],
+      backgroundColor: Color.fromARGB(255, 241, 174, 241),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(children: [
@@ -64,7 +65,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               child: Container(
                 height: 430,
                 width: double.infinity,
-                color: Colors.blue[400],
+                color: Color.fromARGB(255, 235, 107, 237),
                 child: Padding(
                   padding: EdgeInsets.all(15),
                   child: Column(
@@ -123,13 +124,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) =>
-                                          const MyPhoneScreen()));
+                                      builder: (context) => HomeScreen()));
                             },
                             child: Container(
                               height: 38,
                               width: 100,
-                              color: Colors.blue[200],
+                              color: Color.fromARGB(255, 104, 8, 67),
                               child: const Center(
                                 child: Text(
                                   "Sign Up",
@@ -203,7 +203,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       child: Text(
                         "Already have an Account? Login",
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Color.fromARGB(255, 105, 7, 80),
                           fontSize: 15,
                         ),
                       ),

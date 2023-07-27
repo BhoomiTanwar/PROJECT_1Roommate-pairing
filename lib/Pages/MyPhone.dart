@@ -23,7 +23,7 @@ class _MyPhoneScreenState extends State<MyPhoneScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.blueGrey[900],
+        backgroundColor: Color.fromARGB(255, 241, 174, 241),
         body: Column(
           children: [
             Padding(
@@ -49,8 +49,8 @@ class _MyPhoneScreenState extends State<MyPhoneScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/face-recognition.png',
-                    width: 300,
+                    'assets/call.png',
+                    width: 250,
                     height: 250,
                   ),
                   SizedBox(
@@ -126,7 +126,7 @@ class _MyPhoneScreenState extends State<MyPhoneScreen> {
                           },
                           child: Text("Send the OTP"),
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.blue[300],
+                            primary: Color.fromARGB(255, 104, 9, 107),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10)),
                           ))),

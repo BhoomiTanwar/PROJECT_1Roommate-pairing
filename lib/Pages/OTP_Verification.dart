@@ -1,6 +1,8 @@
 import 'package:cbigdtuw04/Pages/SignUpScreen.dart';
+import 'package:cbigdtuw04/blocs/swipe_bloc.dart';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
   runApp(const OTPverificationScreen());
@@ -11,13 +13,13 @@ class OTPverificationScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Verification Code',
-      theme: ThemeData(
-        primarySwatch: Colors.indigo,
+    return MultiBlocProvider(
+      providers: [BlocProvider<SwipeBloc>(create: (context) => SwipeBloc())],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Verification Code',
+        home: const HomePage(),
       ),
-      home: const HomePage(),
     );
   }
 }

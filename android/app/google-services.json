@@ -1,34 +1,41 @@
 {
   "project_info": {
-    "project_number": "814971929913",
-    "project_id": "roommate-pairing-app",
-    "storage_bucket": "roommate-pairing-app.appspot.com"
+    "project_number": "24461275788",
+    "project_id": "flutterroommate1",
+    "storage_bucket": "flutterroommate1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:814971929913:android:fea4555df143656dd054e8",
+        "mobilesdk_app_id": "1:24461275788:android:82c7d9e81fac1a84d3c1a9",
         "android_client_info": {
           "package_name": "com.example.cbigdtuw04"
         }
       },
       "oauth_client": [
         {
-          "client_id": "814971929913-0hamo92snr0qabnge2ev047m4njumec3.apps.googleusercontent.com",
+          "client_id": "24461275788-s1kanpu07c4mdsl6f1847kq66ee4nhv7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCuuFVef7m75FofUgG1FF0NN-ED9HHnG4Q"
+          "current_key": "AIzaSyDKha7exjrDVaiK1y0xP7b5Yf_iD0TngeM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "814971929913-0hamo92snr0qabnge2ev047m4njumec3.apps.googleusercontent.com",
+              "client_id": "24461275788-s1kanpu07c4mdsl6f1847kq66ee4nhv7.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "24461275788-cda7had5rv31utm8jtg512fn2cmtm2tl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cbigdtuw04"
+              }
             }
           ]
         }

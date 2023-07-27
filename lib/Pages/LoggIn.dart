@@ -17,7 +17,7 @@ class _LogInScreenState extends State<LogInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.blueGrey[900],
+        backgroundColor: Color.fromARGB(255, 241, 174, 241),
         body: SafeArea(
             child: SingleChildScrollView(
                 child: Column(children: [
@@ -25,15 +25,19 @@ class _LogInScreenState extends State<LogInScreen> {
             height: 90,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: const [
+              children: [
                 Padding(
-                  padding: EdgeInsets.only(left: 20),
-                  child: Icon(
-                    Icons.arrow_back,
-                    color: Colors.white,
-                    size: 30,
-                  ),
-                ),
+                    padding: EdgeInsets.only(left: 20),
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).pop();
+                      },
+                      child: const Icon(
+                        Icons.arrow_back,
+                        color: Colors.white,
+                        size: 30,
+                      ),
+                    )),
                 Padding(
                   padding: EdgeInsets.only(left: 65),
                 ),
@@ -43,7 +47,7 @@ class _LogInScreenState extends State<LogInScreen> {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 30,
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 103, 3, 83),
                   ),
                 )
               ],
@@ -61,7 +65,7 @@ class _LogInScreenState extends State<LogInScreen> {
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 25,
-              color: Colors.white,
+              color: Color.fromARGB(255, 104, 5, 76),
             ),
           ),
           const SizedBox(
@@ -72,7 +76,7 @@ class _LogInScreenState extends State<LogInScreen> {
               child: Container(
                 height: 300,
                 width: double.infinity,
-                color: Colors.blue[400],
+                color: Color.fromARGB(255, 235, 107, 237),
                 child: Padding(
                     padding: EdgeInsets.all(15),
                     child: Column(
@@ -113,7 +117,7 @@ class _LogInScreenState extends State<LogInScreen> {
                               child: Container(
                                 height: 38,
                                 width: 100,
-                                color: Colors.blue[200],
+                                color: Color.fromARGB(255, 101, 6, 95),
                                 child: const Center(
                                   child: Text(
                                     "Log In",
@@ -134,7 +138,7 @@ class _LogInScreenState extends State<LogInScreen> {
                 Text(
                   "Forget Password?",
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 103, 6, 97),
                     fontSize: 15,
                   ),
                 ),
@@ -155,7 +159,7 @@ class _LogInScreenState extends State<LogInScreen> {
               child: new Container(
                   margin: const EdgeInsets.only(left: 15.0, right: 31.0),
                   child: Divider(
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 250, 237, 247),
                     height: 50,
                   )),
             ),
@@ -199,7 +203,7 @@ class _LogInScreenState extends State<LogInScreen> {
                     child: Text(
                       "Don't have an account? CREATE ACCOUNT",
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Color.fromARGB(255, 104, 5, 86),
                         fontSize: 15,
                       ),
                     ),
